@@ -10,13 +10,12 @@
 }
 
 .header {
-  background-color: #F2F2F2 ;
+  display: flex;
   height: 100vh;
-  width: 100vh;
+  background-color: #F2F2F2 ;
   min-height: 600px;
   max-height: 756px;
   /* parameters for the header section */
-  position: relative;
 }
 
 .logo_place_header {
@@ -24,14 +23,16 @@
   height: 31px;
   position:absolute;
   z-index:1;
-  top: 38px;
-  left: 64px;
+  margin-top: 30px;
+  margin-left: 64px;
 }
 
 .header__title{
-  display: inline-block;
-  margin-top: 240px;
+  display: flex;
+  align-items: center;
+  width: 730px;
   line-height: 96px;
+  margin-left: 64px;
   font-size:102px;
   font-weight: bold;
   z-index: 1;
@@ -40,9 +41,10 @@
 
 
 .header__subtitle{
+
   position: absolute;
-  left: 64px;
-  bottom: 30px;
+bottom: 698px;
+right: 1375px;
   line-height: 25px;
   font-size:18px;
   font-weight: normal;
@@ -57,20 +59,25 @@
 .main-illustration{
   position: absolute;
 width: 756px;
+top: 148px;
+left: 230px;
 height: 608px;
-top: 64px;
+margin-left: 820px;
 z-index: 1;
 }
 
 
 
-
+img{
+  flex-direction: column-reverse;
+}
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
-  display: inline-block;
-  margin-left: 175px;
-  position: absolute;
+position: absolute;
+  top: 64px;
+  left:62%;
+  right: 0;
   height: 568px;
   width: 568px;
   background:  #2F80ED;
@@ -78,11 +85,9 @@ z-index: 1;
 
 
 .description {
-  margin-left: 100px;
-  margin-top:100px;
-  margin-bottom: 100px;
   display: flex;
   min-width: 784px;
+  margin-top: 100px;
   align-content: space-between;
   border:1px  #2F80ED solid;
 }
@@ -120,6 +125,7 @@ z-index: 1;
 
 .digits{
   display: flex;
+  margin-top: 100px;
   flex-direction: column;
   align-items: center;
  
@@ -195,6 +201,7 @@ z-index: 1;
   display: flex;
   background-color:  #F2F2F2 ;
 height: 790px;
+margin-top: 100px;
 position: relative;
 overflow: hidden;
 
@@ -247,12 +254,12 @@ font-weight: normal;
 
 
 .kaufman{
- display: inline-block;
  overflow: hidden;
  background-color: #000000;
 }
 
 .section-title_theme__dark{
+   margin-top: 90px;
   color: white;
   display: flex;
   text-align: center;
@@ -296,7 +303,7 @@ margin-right: auto;
 }
 
 .table_theme__dark{
-
+margin-bottom: 90px;
   width: 1231px;
   margin-right: auto;
   margin-left: auto;
@@ -323,6 +330,7 @@ margin-right: auto;
 }
 
 .footer{
+  
 min-height: 350px;
   background-color: black;
   margin-left: auto;
@@ -332,7 +340,6 @@ min-height: 350px;
 .footer__columns{
   display: flex;
   flex-direction: start;
-  margin-bottom: 40px;
   min-height: 350px;
 }
 
